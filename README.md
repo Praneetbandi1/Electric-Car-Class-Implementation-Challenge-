@@ -1,1 +1,3 @@
-# Electric-Car-Class-Implementation-Challenge-
+# Electric-Car-Class-Implementation-Challenge
+
+This project was about implementing the EV class in order to represent the current battery charge. The EV class was tested using multiple methods such as brake,accelerate, and chargebattery. The accelerate method had an override in order to keep  increasing the speed by 20 kilometers(km) per hour and the battery charge is decreased by one percent. The speed and charge need to continue to be adjusted over time. The car used for the test data was a Tesla that started at 120 km/hour. 
