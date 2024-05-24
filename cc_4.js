@@ -31,6 +31,14 @@ class Ev extends Car {
         this.batteryCharge=chargeTo;
        
         console.log(`Battery charged: ${this.batteryCharged}`);
+        
+    }
+    accelerate() {
+        this.speedvalue=this.speedValue+20;
+        this.batteryCharge=this.batteryCharge-1;
+
+        console.log( `${this.makeName} going at ${this.speedValue } km/h, with a charge of ${this.batteryCharge}%`);
+        
     }
 }
 
