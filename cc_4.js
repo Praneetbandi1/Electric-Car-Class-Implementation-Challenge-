@@ -33,14 +33,24 @@ class Ev extends Car {
         console.log(`Battery charged: ${this.batteryCharged}`);
         
     }
+    //Override accelerate method to increase speed by 20 km/h and decrease overall battery charge by 1
     accelerate() {
         this.speedvalue=this.speedValue+20;
         this.batteryCharge=this.batteryCharge-1;
 
         console.log( `${this.makeName} going at ${this.speedValue } km/h, with a charge of ${this.batteryCharge}%`);
+
         
     }
 }
+//testing Sub and Super Class
+let myTesla= new Ev("Tesla",120,23);
+myTesla.accelerate();
+myTesla.brake();
+
+myTesla.chargeBattery(60)
+myTesla.accelerate();
+myTesla.brake() 
 
 
 
